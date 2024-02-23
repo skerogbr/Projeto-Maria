@@ -40,12 +40,31 @@
         color: #8f05b9;
     }
 
+    div > p{
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: white;
+    }
+
  
     </style>
 </head>
 <body>
     <img src="midias/logotent2 (1).png" alt="">
     <h1>Olá, Maria!</h1>
+    
+    <a href="#" onclick="clicou()">Quando achar que não te quero mais, clique aqui!</a>
+    <div id="saída"></div>
+
+    <div>
+        <script>
+            function clicou(){
+                s = window.document.getElementById("saída")
+                s.innerHTML += '<p>Eu te amo, te quero e preciso de você!</p>'
+            }
+        </script>
+    </div>
+
     <h2><a href="pag2.html"><img src="midias/nós.jpeg" alt=""
     ><br>Minhas fotos favoritas!</a><br><a href="pag3.html"><img src="midias/pág3image.jpeg" alt=""><br>Para rir, clique aqui!</a><br>
 <a href="https://wa.me/+351964564112/?text=Quer%20namorar%20comigo?"><img src="midias/eu.jpg" alt=""><br>Para falar com o amor da sua vida, clique aqui!</a><br><a href="pag4.html"><img src="midias/valentyneday.png" alt=""><br>Valentine's Day</a></h2>
