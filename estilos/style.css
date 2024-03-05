@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/*móvel*/
+
+@font-face {
+    font-family: 'Love';
+    src: url(../love_larry/love\ larry\ ttf.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100¢;
+    background-image: linear-gradient(to right, #8C2641, #FAACC4);
+    text-align: center;
+    
+}
+
+header img {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+header h1 {
+font-family: 'Love';
+font-weight: normal;
+font-size: 3em;
+color: #fff;
+}
+
+main p {
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    width: 98vw;
+    padding: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    background-color: #8C2641;
+    color: white;
+    border-top: 2px solid black;
+}
+
+menu > ul > li > a:hover {
+    background-color: #FAACC4;
+}
+
+span#burger {
+    background-color: #8C2641;
+    border-top: 2px solid black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+span#burger:hover {
+    background-color: #FAACC4;
+    color: black;
+    transition: 1s;
+}
+
+p#eu {
+    width: 98vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+
+color: black;
+transition: 0.5s;
+}
+
+
+div > p {
+font-weight: bolder;
+font-size: 1.5em;
+color: white;
+}
+
+a#link {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}

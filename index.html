@@ -3,70 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Amor</title>
-    <style>
-        @font-face {
-            font-family: Love;
-            src: url(love_larry/love\ larry\ ttf.ttf);
-        }
-        body{
-            height: 100¢;
-            background-image: linear-gradient(to right, #8C2641, #FAACC4);
-            text-align: center;
-            
-        }
-    h1{
-        font-family: 'Love';
-        font-weight: normal;
-        font-size: 3em;
-        color: #fff;
-    }
-
-    h2{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        color: black;
-    }
-
-    a:active{
-        color: #8f05b9;
-    }
-
-    div > p{
-        font-weight: bolder;
-        font-size: 1.5em;
-        color: white;
-    }
-
- 
-    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body>
-    <img src="midias/logotent2 (1).png" alt="">
-    <h1>Olá, Maria!</h1>
+    <header>
+        <img src="midias/logotent2 (1).png" alt="">
+        <h1>Olá, Maria!</h1>
+        <span id='burger' class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="pag2.html">Fotos Favoritas</a></li>
+                <li><a href="pag3.html">Momentos engraçados</a></li>
+                <li><a href="pag4.html">Valentine Day's</a></li>
+                <li><a href="https://open.spotify.com/playlist/7GLov44lX8yCvu5C2AuaHX?si=OVnFjVjJR-u_f3whVZ9tHQ&pi=e-z6MUv394Q-CK" target="_blank">Nossas músicas</a></li>
+            </ul>
+        </menu>
+    </header>
     
-    <a href="#" onclick="clicou()">Quando achar que não te quero mais, clique aqui!</a>
-    <div id="saída"></div>
+    
+    <main>
+        <a id="link" href="#" onclick="clicou()">Quando achar que não te quero mais, clique aqui!</a>
+        <div id="saída"></div>
+        <div>
+            <script>
+                function clicou(){
+                    s = window.document.getElementById("saída")
+                    s.innerHTML += '<p>Eu te amo, te quero e preciso de você!</p>'
+                }
+            </script>
+        </div>
+        <p>Fiz esse site para a minha princesa acessar sempre que quiser. Você é a mulher da minha vida e quero que sempre tenha certeza disso!</p>
+        
+        <p id="eu"><a href="https://wa.me/+351964564112/?text=Quer%20namorar%20comigo?" target="_blank"><img src="midias/eu.png" alt=""><br>Para falar com o amor da sua vida, clique aqui!</a></p>
+    </main>
 
-    <div>
-        <script>
-            function clicou(){
-                s = window.document.getElementById("saída")
-                s.innerHTML += '<p>Eu te amo, te quero e preciso de você!</p>'
-            }
-        </script>
-    </div>
-
-    <h2><a href="pag2.html"><img src="midias/nós.jpeg" alt=""
-    ><br>Minhas fotos favoritas!</a><br><a href="pag3.html"><img src="midias/pág3image.jpeg" alt=""><br>Para rir, clique aqui!</a><br>
-<a href="https://wa.me/+351964564112/?text=Quer%20namorar%20comigo?"><img src="midias/eu.jpg" alt=""><br>Para falar com o amor da sua vida, clique aqui!</a><br><a href="pag4.html"><img src="midias/valentyneday.png" alt=""><br>Valentine's Day</a></h2>
+<script>
+    function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        } 
+</script>
 </body>
 </html>
