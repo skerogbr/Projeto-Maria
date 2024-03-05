@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*estilo pags extras*/
+
+@font-face {
+    font-family: Love;
+    src: url(../love_larry/love\ larry\ ttf.ttf);
+}
+body{
+    background-image: linear-gradient(to right, #8C2641, #FAACC4);
+    
+    text-align: center;
+}
+
+h1{
+    font-family: 'Love';
+    font-weight: normal;
+    font-size: 3m;
+    color: #fff;
+}
