@@ -8,7 +8,7 @@
 }
 body{
     background-image: linear-gradient(to right, #8C2641, #FAACC4);
-    
+    background-repeat: no-repeat;
     text-align: center;
 }
 
